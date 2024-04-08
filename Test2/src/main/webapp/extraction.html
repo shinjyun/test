@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>문자열 추출</title>
+
+<script type="text/javascript">
+url = "https://www.naver.com/index.html";
+document.write("문자열 : " + url + "<br>");
+
+doubleSlash = url.indexOf("://");
+
+slash = url.indexOf("/", doubleSlash + 3);
+domain = url.substring(doubleSlash+3, slash);
+document.write("도메인: " + domain);
+</script>
+
+</head>
+<body>
+
+</body>
+</html>

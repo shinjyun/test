@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>올리브영 회원 가입</title>
+</head>
+<body>
+	<form action="./action.html" method="post" enctype="application/x-www-form-urlencoded">
+	<fieldset>
+	<legend>회원가입 정보 입력</legend>
+	
+	<p>
+	<label for="ename">성명</label>
+	<input type="text" id="ename" name="ename" maxlength="8" size="15"
+	required placeholder="이름을 입력해주세요.">
+	</p>
+	
+	<p>
+	<label for="birth">생년월일</label>
+	<input type="date" name="birth" id="birth" required>
+	</p>
+	
+	<p>
+	<label for="phone">휴대전화</label>
+	<input type="text" name="phone" id="phone" required style="width: 220px"
+	pattern="[0-9]{7,8}" placeholder="01X 제외 7~8자리를 입력해주세요.">
+	</p>
+
+	
+	<p>
+	<label for="email">이메일</label>
+	<input type="email" name="email" id="email" required
+	placeholder="이메일을 입력해주세요.">
+	</p>
+	
+	<p>
+	<label for="password">비밀번호</label>
+	<input type="password" id="password" name="password" required
+	pattern="[A-Za-z0-9]{4,10}" placeholder="영문/숫자 4~8자 이내">
+	</p>
+	
+	
+	<p>
+	<input type="checkbox" name="agree" required>
+	<label for="agree">약관동의(필수)</label>
+	</p>
+	
+	<div> <input type="submit" value="전송"> <input type="reset" value="취소"> </div>
+	
+	</fieldset>
+	</form>
+</body>
+</html>

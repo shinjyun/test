@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>회원가입</title>
+<link rel="stylesheet" type="text/css" href="./common.css">
+</head>
+<body>
+<div id="contentsArea">
+<div id="titlename">
+<h1>회원가입</h1>
+<p class="formSign">
+<strong class="require">필수</strong>는 반드시 입력하는 항목입니다.
+</p>
+
+<form action="#" method="post" id="joinForm" name="joinForm">
+<fieldset>
+<legend>회원가입 정보 입력 폼</legend>
+
+<p>
+<label for="name">성명 <strong class="require">필수</strong></label>
+<input type="text" id="name" name="name" required placeholder="홍길동">
+</p>
+
+<p>
+<label for="id">아이디 <strong class="require">필수</strong></label>
+<input type="text" id="id" name="id" required placeholder="Guest">
+<a href="#" class="idCheck">ID 중복확인</a>
+</p>
+
+<p>
+<label for="password">암호 <strong class="require"> 필수 </strong></label>
+<input type="password" id="password" name="password" required placeholder="영문/숫자 4 - 8자 이내">
+</p>
+
+<p>
+<label for="confirmPassword">암호 확인<strong class="require">필수</strong></label>
+<input type="password" id="confirmPassword" name="confirmPassword" required>
+</p>
+
+<p>
+<label for="address" class="labelAddress">주소</label>
+<a href="#" class="findZipcode">우편번호 찾기</a>
+<input type="text" id="zipcode" name="zipcode" maxlength="3" size="4" title="우편번호 뒷자리">
+<input type="text" id="address" name="address" maxlength="100" size="6" placeholder="입력 예) 서울시 노원구 월계동">
+</p>
+
+<p>
+<label for="tel">연락처</label>
+<input type="tel" id="tel" name="tel" maxlength="11" size="20" pattern="[0-9]{11}" title="하이픈(-)은 입력할 수 없습니다."
+placeholder="입력 예)01012345678">
+</p>
+
+<p>
+<label for="email">이메일 <strong class="require">필수</strong> </label>
+<input type="email" id="email" name="email" size="30" required placeholder="입력 예) minhaett@naver.com">
+</p>
+
+<p class="mailing">
+<em>메일링리스트 가입</em>
+<span>메일링리스트에 가입하시면 뉴스레터를 받아보실 수 있습니다.</span>
+<input type="radio" id="mailing" name="mailing" value="Yes" checked="checked">
+<label for="mailing">예</label>
+<input type="radio" id="mailing" name="mailing" value="No">
+<label for="mailing">아니오</label>
+</p>
+
+<div class="btnJoinArea">
+<button type="submit" class="btnOk">회원가입</button>
+<button type="reset" class="btnCancel">취소</button>
+</div>
+
+</fieldset>
+</form>
+</div>
+</div>
+</body>
+</html>

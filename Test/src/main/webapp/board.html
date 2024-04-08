@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>게시판</title>
+<link rel="stylesheet" type="text/css" href="./common.css">
+</head>
+<body>
+<div id="contentsArea">
+<div id="titlename">
+<h1>게시판</h1>
+<p class="allPost">
+전체 <strong>102</strong>개 게시물
+</p>
+<table class="boardTable">
+<caption>게시판</caption>
+<thead>
+<tr>
+<th scope="col" class="bbsNumber">No</th>
+<th scope="col" class="bbsTitle">제목</th>
+<th scope="col" class="bbsAuthor">글쓴이</th>
+<th scope="col" class="bbsDate">등록일</th>
+<th scope="col" class="bbsHit">조회 수</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>1</td>
+<td>테스트</td>
+<td>홍길동</td>
+<td>2020.01.30</td>
+<td>56</td>
+</tr>
+</tbody>
+</table>
+<p class="paging">
+<a href="#" class="btnPrev">이전 5개</a>
+<span>
+<a href="#">5</a>
+<a href="#"> <strong>4</strong></a>
+<a href="#">3</a>
+<a href="#">2</a>
+<a href="#">1</a>
+</span>
+<a href="#" class="btnNext">다음 5개</a>
+</p>
+</div>
+</div>
+<div id="infoArea">
+<div class="search">
+<form action="#" method="get" id="searchForm" name="searchForm">
+<fieldset>
+<legend>검색 폼</legend>
+<label for="keyword">자료 검색</label>
+<input type="search" id="keyword" name="keyword" required placeholder="검색어를 입력하세요.">
+<button type="submit">검색</button>
+</fieldset>
+</form>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>사원 정보</title>
+</head>
+<body>
+	<form action="./action.html" method="post" enctype="application/x-www-form-urlencoded">
+	<fieldset>
+	<legend>사원 정보</legend>
+	
+	<p>
+	<label for="deptno">사원 번호</label>
+	<input type="text" id="deptno" name="deptno" maxlength="8" size="15" required pattern="[0-9]{8}"
+	placeholder="입력 예) 20140000">
+	</p>
+	
+	<p>
+	<label for="ename">성명</label>
+	<input type="text" id="ename" name="ename" maxlength="8" size="15" required placeholder="홍길동">
+	</p>
+	
+	<p>
+	<label for="dname">부서</label>
+	<select name="dname" id="dname">
+	<option value="인사과">인사과 <option value="총무과">총무과
+	</select>
+	</p>
+	
+	<p>
+	<label for="job">직급</label>
+	<select name="job" id="job">
+	<option value="팀장">팀장 <option value="대리">대리
+	</select>
+	</p>
+	
+	<p>
+	<label for="hiredate">입사 날짜</label>
+	<input type="date" name="hiredate" id="hiredate" required>
+	</p>
+	
+	<p>
+	<label for="leavedate">퇴사 날짜</label>
+	<input type="date" name="leavedate" id="leavedate" required>
+	</p>
+	
+	<p>
+	<label for="password">관리자 비밀번호</label>
+	<input type="password" id="password" name="password" required
+	pattern="[A-Za-z0-9]{4,10}" placeholder="영문/숫자 4~8자 이내">
+	</p>
+	
+	<div> <input type="submit" value="전송"> <input type="reset" value="취소"> </div>
+	
+	</fieldset>
+	</form>
+</body>
+</html>
